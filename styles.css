@@ -80,61 +80,6 @@ p {
 	color:#FFFFFF;
 	}
 
-/* nav 
-
-nav {
-	position: absolute;
-	width: 960px;
-	background: #000033; 
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9', endColorstr='#7a7a7a');
-    background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#666666)); 
-    background: -moz-linear-gradient(top,  #CCCCCC,  #666666);
-	
-	
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border:solid #000000 1px;
-	}
-
-nav ul {
-	margin: 0 auto;
-	width: 960px;
-	list-style: none;
-	position:center;
-	}
-
-nav ul li {
-	float: left;
-	}
-		
-nav ul li a {
-	display: block;
-	margin-right: 20px;
-	width: 140px;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 44px;
-	text-align: center;
-	text-decoration: none;
-	color: #f2ede7;
-	}
-			
-nav ul li a:hover {
-	color: #000000;
-	}
-			
-nav ul li.selected a {
-	color: #000000;
-	}
-			
-nav ul li.subscribe a {
-	margin-left: 20px;
-	padding-left: 33px;
-	text-align: left;
-	background: url("images/rss.png") left center no-repeat;
-	}
-*/
-
 }
 #nav {
 	margin: 0;
@@ -191,7 +136,9 @@ nav ul li.subscribe a {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
 }
+
 /* sub levels link hover */
+/*
 #nav ul li:hover a, #nav li:hover li a {
 	background: none;
 	border: none;
@@ -199,23 +146,27 @@ nav ul li.subscribe a {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 }
+*/
+/*
 #nav ul a:hover {
-	background: #0399d4 !important; /* for non-css3 browsers */
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#04acec', endColorstr='#0186ba'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#999999)) !important; /* for webkit browsers */
-	background: -moz-linear-gradient(top,  #666666,  #999999) !important; /* for firefox 3.6+ */
+	background: #0399d4 !important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#04acec', endColorstr='#0186ba');
+	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#999999)) !important;
+	background: -moz-linear-gradient(top,  #666666,  #999999) !important;
 
 	color: #fff !important;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
 }
+*/
 /* level 2 list */
+/*
 #nav ul {
-	background: #ddd; /* for non-css3 browsers */
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cfcfcf'); /* for IE */
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cfcfcf)); /* for webkit browsers */
-	background: -moz-linear-gradient(top,  #fff,  #cfcfcf); /* for firefox 3.6+ */
+	background: #ddd;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cfcfcf');
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cfcfcf));
+	background: -moz-linear-gradient(top,  #fff,  #cfcfcf);
 
 	z-index:1000;
 	display: none;
@@ -233,7 +184,9 @@ nav ul li.subscribe a {
 	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
+*/
 /* dropdown */
+/*
 #nav li:hover > ul {
 	display: block;
 }
@@ -246,25 +199,32 @@ nav ul li.subscribe a {
 	font-weight: normal;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
 }
+*/
 /* level 3+ list */
+/*
 #nav ul ul {
 	left: 181px;
 	top: -3px;
 }
+*/
 /* rounded corners for first and last child */
+/*
 #nav ul li:first-child > a {
 	-webkit-border-top-left-radius: 10px;
 	-moz-border-radius-topleft: 10px;
 	-webkit-border-top-right-radius: 10px;
 	-moz-border-radius-topright: 10px;
 }
+*/
+/*
 #nav ul li:last-child > a {
 	-webkit-border-bottom-left-radius: 9px;
 	-moz-border-radius-bottomleft: 9px;
 	-webkit-border-bottom-right-radius: 9px;
 	-moz-border-radius-bottomright: 9px;
 }
-/* clearfix */
+*/
+/* clearfix *//*
 #nav:after {
 	content: ".";
 	display: block;
@@ -273,6 +233,7 @@ nav ul li.subscribe a {
 	line-height: 0;
 	height: 0;
 }
+*/
 #nav {
 	z-index: -1;
 	padding:5px 2px 0px 2px;
