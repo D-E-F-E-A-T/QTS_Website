@@ -60,12 +60,14 @@ h1 {
 	font-size: 48px;
 	padding: 20px 0;
 	text-shadow: 2px 2px 2px #000;
-	color: #d6a965;
+	color: #FFFFFF;
+	display: inline-block;
 	}
 
 h2 {
 	font-size: 24px;
 	padding: 20px 0;
+	color:#EED366;
 	}
 
 h3 {
@@ -75,6 +77,7 @@ h3 {
 
 p {
 	padding-bottom: 20px;
+	color:#FFFFFF;
 	}
 
 /* nav 
@@ -135,7 +138,7 @@ nav ul li.subscribe a {
 }
 #nav {
 	margin: 0;
-	padding: 10px 6px 0;
+	padding: 0px;
 	line-height: 100%;
 	border-radius: 1em;
 	width:960px;
@@ -271,7 +274,10 @@ nav ul li.subscribe a {
 	height: 0;
 }
 #nav {
-	display: inline-block;
+	z-index: -1;
+	padding:5px 2px 0px 2px;
+	border-radius:2px;
+	margin-top:30px;
 }
 html[xmlns] #nav {
 	display: block;
@@ -333,10 +339,7 @@ html[xmlns] #nav {
 	width: 920px; 
 	margin:10px 5px 10px 0; 
 	padding:5px 20px 5px 20px;
-	background: #000033; /* for non-css3 browsers */
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9', endColorstr='#7a7a7a'); /* for IE */
-    background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#666666)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #CCCCCC,  #666666);
+	background: rgba(105,105,105,0.5); /* for non-css3 browsers */
 	
 /* curved border radius */
 	-moz-border-radius: 10px;
@@ -361,11 +364,12 @@ html[xmlns] #nav {
 }
 
 #content .block {
-	height: 355px;
+	height: 450px;
 	font-size: 1em;
-	margin-right: 10px; /*Creates the 10px gap between each column*/
+	margin-right: 5px; /*Creates the 10px gap between each column*/
+	margin-left:5px;
 	padding: 20px;
-	background: #666666;
+	background: rgba(197,197,197,0.50);
 /* curved border radius */
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -383,6 +387,7 @@ html[xmlns] #nav {
 	margin: 0 auto;
 	height: 120px;
 	display: block;
+	border-radius:5px;
 	-ms-interpolation-mode: bicubic; /*prevents image pixelation IE 6/7 */
 	}
 /* end of column configuration */
@@ -437,10 +442,10 @@ footer section a:hover {
 	width: 610px; 
 	margin:10px 5px 10px 0; 
 	padding:5px 20px 5px 20px;
-	background: #000033; /* for non-css3 browsers */
-    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9', endColorstr='#7a7a7a'); /* for IE */
-    background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#666666)); /* for webkit browsers */
-    background: -moz-linear-gradient(top,  #CCCCCC,  #666666);
+	background: rgba(197,197,197,0.5); /* for non-css3 browsers */
+    /*filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9', endColorstr='#7a7a7a');*/ /* for IE */
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#666666));*/ /* for webkit browsers */
+    /*background: -moz-linear-gradient(top,  #CCCCCC,  #666666);*/
 	
 /* curved border radius */
 	-moz-border-radius: 10px;
@@ -509,5 +514,232 @@ aside section ul li a:hover {
 	text-decoration: underline;
 	color: #fff;
 	}
-	
+
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top:20px;
+  line-height: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 100%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+}
+
+#map_canvas {
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+    float:right;
+  }
+
+  #contact_content {
+  	width:40%;
+  	float:left;
+  }
+
+  #contact_content p {
+  	font-family: verdana;
+  	font-size:24;
+  	color:#000000;
+  }
+
+  #contact_content h2 {
+  	font-family: verdana;
+  	color:white;
+  }
+
+  #contact_content h4 {
+  	font-family: verdana;
+  	color:white;
+  }
+
+  .ital {
+  	font-style:italic;
+  }
+
+h2.main_content {
+	text-align: center;
+}
+
+#bottom_content {
+	width:871px;
+	border-radius: 10px;
+	margin:515px 5px 10px 5px; 
+	padding:5px 20px 5px 20px;
+	background: rgba(197,197,197,0.5);
+	position: relative;
+}
+
+#innerImage {
+	float:right;
+	width:40%;
+	margin-bottom:30px;
+	margin-top:32px;
+}
+
+.DGSA {
+	color:white;
+	font-weight:bold;
+	padding-left:50px;
+}
+
+#content_fade {
+	width:450px;
+	float:left;
+	border-radius: 10px;
+	margin:5px 5px 3px 5px; 
+	padding:5px 20px 5px 20px;
+	background: rgba(197,197,197,0.5);
+	position: relative;
+}
+
+#content_fade2 {
+	width:450px;
+	height: 305px;
+	float:left;
+	border-radius: 10px;
+	margin:5px 5px 5px 5px; 
+	padding:5px 20px 5px 20px;
+	background: rgba(197,197,197,0.5);
+	position: relative;
+}
 
