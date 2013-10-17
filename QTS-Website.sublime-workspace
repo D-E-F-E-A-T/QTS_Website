@@ -31,7 +31,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8144,
+				"buffer_size": 8170,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "print.css",
+			"settings":
+			{
+				"buffer_size": 328,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,7 +47,7 @@
 			"file": "styles.css",
 			"settings":
 			{
-				"buffer_size": 14005,
+				"buffer_size": 12931,
 				"line_ending": "Unix"
 			}
 		},
@@ -47,7 +55,7 @@
 			"file": "Readme.md",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 91,
 				"line_ending": "Unix"
 			}
 		}
@@ -108,6 +116,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-webkit-border",
 			"content",
 			"img",
 			"450px",
@@ -142,7 +151,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -151,15 +160,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8144,
+						"buffer_size": 8170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5996,
-								5996
+								1632,
+								1632
 							]
 						],
 						"settings":
@@ -167,26 +176,53 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3021.0,
+						"translation.y": 849.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "styles.css",
-					"semi_transient": false,
+					"file": "print.css",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 14005,
+						"buffer_size": 328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13852,
-								13852
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4834,
+								4834
 							]
 						],
 						"settings":
@@ -195,18 +231,18 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4042.0,
+						"translation.y": 3344.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "Readme.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 91,
 						"regions":
 						{
 						},
